@@ -13,19 +13,19 @@ source:
 
 build:
   number: 2
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv"
 
 requirements:
   host:
-  - python >=3.6
-  - pip
+    - python >=3.6
+    - pip
   run:
-  - python >=3.6
-  - dataclasses >=0.6  # [py36]
+    - python >=3.6
+    - dataclasses >=0.6  # [py36]
 
 test:
   imports:
-  - {{ name }}
+    - {{ name }}
 
 about:
   home: {{ repo_url }}
