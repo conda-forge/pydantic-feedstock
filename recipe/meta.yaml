@@ -14,13 +14,14 @@ source:
 build:
   number: 2
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv"
+  skip: True # [py2k or py35]
 
 requirements:
   host:
-    - python >=3.6
+    - python
     - pip
   run:
-    - python >=3.6
+    - python
     - dataclasses >=0.6  # [py36]
 
 test:
