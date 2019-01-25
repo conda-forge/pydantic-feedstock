@@ -10,8 +10,12 @@ jobs:
   strategy:
     maxParallel: 4
     matrix:
-      win_:
-        CONFIG: win_
+      win_python3.6:
+        CONFIG: win_python3.6
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: False
+      win_python3.7:
+        CONFIG: win_python3.7
         CONDA_BLD_PATH: D:\\bld\\
         UPLOAD_PACKAGES: False
   steps:
