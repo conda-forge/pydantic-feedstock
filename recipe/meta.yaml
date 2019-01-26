@@ -12,20 +12,21 @@ source:
   sha256: edbb08b561feda505374c0f25e4b54466a0a0c702ed6b2efaabdc3890d1a82e7
 
 build:
-  number: 1
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 2
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv"
+  skip: True  # [py2k or py35]
 
 requirements:
   host:
-  - python >=3.6
-  - pip
+    - python
+    - pip
   run:
-  - python >=3.6
-  - dataclasses >=0.6  # [py36]
+    - python
+    - dataclasses >=0.6  # [py36]
 
 test:
   imports:
-  - {{ name }}
+    - {{ name }}
 
 about:
   home: {{ repo_url }}
