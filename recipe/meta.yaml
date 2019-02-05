@@ -1,5 +1,5 @@
 {% set name = "pydantic" %}
-{% set version = "0.18.2" %}
+{% set version = "0.19" %}
 {% set repo_url = "https://github.com/samuelcolvin/pydantic" %}
 {% set docs_url = "https://pydantic-docs.helpmanual.io" %}
 
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: edbb08b561feda505374c0f25e4b54466a0a0c702ed6b2efaabdc3890d1a82e7
+  sha256: 7bcc991083c1c0113fd207a4c38f6432d1a640864ac19371e6a18551398f1ae8
 
 build:
-  number: 2
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv"
   skip: True  # [py2k or py35]
 
