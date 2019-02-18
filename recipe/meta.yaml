@@ -1,5 +1,5 @@
 {% set name = "pydantic" %}
-{% set version = "0.19" %}
+{% set version = "0.20" %}
 {% set repo_url = "https://github.com/samuelcolvin/pydantic" %}
 {% set docs_url = "https://pydantic-docs.helpmanual.io" %}
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7bcc991083c1c0113fd207a4c38f6432d1a640864ac19371e6a18551398f1ae8
+  sha256: e38a049c3317ec42b97b99843b908d5f8a1861acc7a0ee636ca76c0048a52bbe
 
 build:
   number: 0
