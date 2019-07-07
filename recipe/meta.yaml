@@ -17,6 +17,8 @@ build:
   skip: True  # [py2k or py35]
 
 requirements:
+  build:
+    - {{ compiler('c') }}
   host:
     - python
     - pip
@@ -28,10 +30,6 @@ requirements:
 test:
   imports:
     - {{ name }}
-  requires:
-    - pytest
-  commands:
-    - pytest --pyargs {{ name }}
 
 about:
   home: {{ repo_url }}
