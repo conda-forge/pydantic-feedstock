@@ -12,14 +12,17 @@ source:
   sha256: 239a05529f01ff096e0b4b3ae8b0fd891dc1571ddca6fe4c013ed1c46646d8bf
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv"
   skip: True  # [py2k or py35]
 
 requirements:
+  build:
+    - {{ compiler('c') }}
   host:
     - python
     - pip
+    - cython # [not win]
   run:
     - python
     - dataclasses >=0.6  # [py36]
