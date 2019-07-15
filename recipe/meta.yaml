@@ -22,7 +22,7 @@ requirements:
   host:
     - python
     - pip
-    - cython # [not win]
+    - cython  # [not win]
   run:
     - python
     - dataclasses >=0.6  # [py36]
