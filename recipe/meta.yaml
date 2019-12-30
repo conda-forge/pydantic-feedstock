@@ -10,8 +10,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 2eab7d548b0e530bf65bee7855ad8164c2f6a889975d5e9c4eefd1e7c98245dc
-  patches:
-  - '0001-change-cython-nthreads-default-to-zero.patch'
 
 build:
   number: 0
