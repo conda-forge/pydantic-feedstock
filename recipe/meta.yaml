@@ -1,5 +1,5 @@
 {% set name = "pydantic" %}
-{% set version = "1.4" %}
+{% set version = "1.5" %}
 {% set repo_url = "https://github.com/samuelcolvin/pydantic" %}
 {% set docs_url = "https://pydantic-docs.helpmanual.io" %}
 
@@ -9,12 +9,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f17ec336e64d4583311249fb179528e9a2c27c8a2eaf590ec6ec2c6dece7cb3f
+  sha256: 446ce773a552a2cb90065d4aa645e16fa7494369b5f0d199e4d41a992a98204d
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv"
-  skip: True  # [py2k or py35]
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
+  skip: true  # [py2k or py35]
 
 requirements:
   build:
@@ -36,7 +36,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Data validation and settings management using python type hinting'
+  summary: Data validation and settings management using python type hinting
   description: |
     Data validation and settings management using python type hinting.
     See documentation <{{ docs_url }}> for more details.
@@ -45,5 +45,5 @@ about:
 
 extra:
   recipe-maintainers:
-  - samuelcolvin
-  - dgasmith
+    - samuelcolvin
+    - dgasmith
