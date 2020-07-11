@@ -5,7 +5,7 @@ Home: https://github.com/samuelcolvin/pydantic
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Data validation and settings management using python type hinting
 
