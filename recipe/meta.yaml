@@ -12,7 +12,7 @@ source:
   sha256: 26464e57ccaafe72b7ad156fdaa4e9b9ef051f69e175dbbb463283000c05ab7b
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
   skip: true  # [py2k or py35]
 
@@ -25,7 +25,7 @@ requirements:
   host:
     - python
     - pip
-    - cython  # [not win]
+    - cython
   run:
     - python
     - dataclasses >=0.6  # [py36]
