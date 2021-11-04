@@ -14,7 +14,7 @@ __migrator:
             - 3.7.* *_73_pypy
     paused: false
     longterm: True
-    pr_limit: 20
+    pr_limit: 10
     exclude:
       # this shouldn't attempt to modify the python feedstocks
       - python
@@ -22,6 +22,7 @@ __migrator:
       - pypy-meta
       - cross-python
       - python_abi
+    exclude_pinned_pkgs: false
 
 python:
   - 3.10.* *_cpython
