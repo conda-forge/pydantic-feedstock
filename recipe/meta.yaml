@@ -14,7 +14,6 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
-  skip: true  # [py2k or py35]
 
 requirements:
   build:
@@ -28,7 +27,7 @@ requirements:
     - cython
   run:
     - python
-    - dataclasses >=0.6  # [py36]
+    - dataclasses >=0.6  # [py==36]
     - typing-extensions >=3.7.4.3
 
 test:
