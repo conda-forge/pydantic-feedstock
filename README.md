@@ -42,10 +42,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_python3.7.____cpython</td>
+              <td>linux_64_python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2633&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pydantic-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pydantic-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -84,10 +84,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_python3.7.____cpython</td>
+              <td>linux_aarch64_python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2633&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pydantic-feedstock?branchName=main&jobName=linux&configuration=linux_aarch64_python3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pydantic-feedstock?branchName=main&jobName=linux&configuration=linux_aarch64_python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -126,10 +126,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_python3.7.____cpython</td>
+              <td>linux_ppc64le_python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2633&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pydantic-feedstock?branchName=main&jobName=linux&configuration=linux_ppc64le_python3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pydantic-feedstock?branchName=main&jobName=linux&configuration=linux_ppc64le_python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -168,10 +168,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_python3.7.____cpython</td>
+              <td>osx_64_python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2633&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pydantic-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pydantic-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -210,6 +210,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>osx_arm64_python3.11.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2633&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pydantic-feedstock?branchName=main&jobName=osx&configuration=osx_arm64_python3.11.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>osx_arm64_python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2633&branchName=main">
@@ -231,10 +238,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_python3.7.____cpython</td>
+              <td>win_64_python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2633&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pydantic-feedstock?branchName=main&jobName=win&configuration=win_64_python3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pydantic-feedstock?branchName=main&jobName=win&configuration=win_64_python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
