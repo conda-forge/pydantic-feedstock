@@ -12,7 +12,7 @@ source:
   sha256: b9a3859f24eb4e097502a3be1fb4b2abb79b6103dd9e2e0edb70613a4459a648
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
 requirements:
@@ -27,7 +27,7 @@ requirements:
     - cython
   run:
     - python
-    - typing-extensions >=4.1.0
+    - typing-extensions >=4.2.0
 
 test:
   imports:
