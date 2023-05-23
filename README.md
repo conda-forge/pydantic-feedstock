@@ -405,6 +405,3 @@ Feedstock Maintainers
 * [@dgasmith](https://github.com/dgasmith/)
 * [@samuelcolvin](https://github.com/samuelcolvin/)
 
-
-<!-- dummy commit to enable rerendering -->
-
