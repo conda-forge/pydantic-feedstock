@@ -1,7 +1,7 @@
 {% set name = "pydantic" %}
-{% set version = "1.10.10" %}
-{% set repo_url = "https://github.com/samuelcolvin/pydantic" %}
-{% set docs_url = "https://pydantic-docs.helpmanual.io" %}
+{% set version = "2.0" %}
+{% set repo_url = "https://github.com/pydantic/pydantic" %}
+{% set docs_url = "https://docs.pydantic.dev" %}
 
 package:
   name: {{ name }}
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3b8d5bd97886f9eb59260594207c9f57dce14a6f869c6ceea90188715d29921a
+  sha256: 6e313661b310eb5b2c45168ce05d8dd79f57563adaf3906162a917585576b846
 
 build:
   number: 0
@@ -22,12 +22,16 @@ requirements:
     - cython                                 # [build_platform != target_platform]
     - {{ compiler('c') }}
   host:
+    - hatchling
+    - hatch-fancy-pypi-readme
     - python
     - pip
     - cython
   run:
     - python
-    - typing-extensions >=4.2.0
+    - typing-extensions >=4.6.1
+    - annotated-types >=0.4.0
+    - pydantic-core ==2.0.1
 
 test:
   imports:
@@ -50,3 +54,4 @@ extra:
     - samuelcolvin
     - dgasmith
     - davidbrochart
+    - pavelzw
