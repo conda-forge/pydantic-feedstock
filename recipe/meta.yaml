@@ -12,7 +12,7 @@ source:
   sha256: 041945a6c75f2451a343674ec7d220cb7e207884fb06aaf2c16b6d0bfaf2bc39
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
 requirements:
@@ -31,7 +31,7 @@ requirements:
     - python
     - typing-extensions >=4.6.1
     - annotated-types >=0.4.0
-    - pydantic-core ==2.0.1
+    - pydantic-core ==2.0.2
 
 test:
   imports:
