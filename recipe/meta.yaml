@@ -31,7 +31,7 @@ requirements:
     - python
     - typing-extensions >=4.6.1
     - annotated-types >=0.4.0
-    - pydantic-core ==2.0.2
+    - pydantic-core ==2.1.2
 
 test:
   requires:
