@@ -406,6 +406,3 @@ Feedstock Maintainers
 * [@pavelzw](https://github.com/pavelzw/)
 * [@samuelcolvin](https://github.com/samuelcolvin/)
 
-
-<!-- dummy commit to enable rerendering -->
-
