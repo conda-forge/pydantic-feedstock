@@ -30,8 +30,12 @@ requirements:
     - typing-extensions >=4.2.0
 
 test:
+  requires:
+    - pip
   imports:
     - {{ name }}
+  commands:
+    - pip check
 
 about:
   home: {{ repo_url }}
