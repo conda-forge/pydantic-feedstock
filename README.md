@@ -3,18 +3,18 @@ About pydantic-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pydantic-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/samuelcolvin/pydantic
+Home: https://github.com/pydantic/pydantic
 
 Package license: MIT
 
 Summary: Data validation and settings management using python type hinting
 
-Development: https://github.com/samuelcolvin/pydantic
+Development: https://github.com/pydantic/pydantic
 
-Documentation: https://pydantic-docs.helpmanual.io
+Documentation: https://docs.pydantic.dev
 
 Data validation and settings management using python type hinting.
-See documentation <https://pydantic-docs.helpmanual.io> for more details.
+See documentation <https://docs.pydantic.dev> for more details.
 
 
 Current build status
@@ -403,5 +403,6 @@ Feedstock Maintainers
 
 * [@davidbrochart](https://github.com/davidbrochart/)
 * [@dgasmith](https://github.com/dgasmith/)
+* [@pavelzw](https://github.com/pavelzw/)
 * [@samuelcolvin](https://github.com/samuelcolvin/)
 
