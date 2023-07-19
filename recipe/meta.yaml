@@ -12,34 +12,29 @@ source:
   sha256: 94f13e0dcf139a5125e88283fc999788d894e14ed90cf478bcc2ee50bd4fc630
 
 build:
-  number: 0
+  noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
+  number: 1
 
 requirements:
-  build:
-    - python                                 # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - cython                                 # [build_platform != target_platform]
-    - {{ compiler('c') }}
   host:
+    - python >=3.7
     - hatchling
-    - hatch-fancy-pypi-readme
-    - python
+    - hatch-fancy-pypi-readme >=22.5.0
     - pip
-    - cython
   run:
-    - python
+    - python >=3.7
     - typing-extensions >=4.6.1
     - annotated-types >=0.4.0
     - pydantic-core ==2.3.0
 
 test:
-  requires:
-    - pip
   imports:
-    - {{ name }}
+    - pydantic
   commands:
     - pip check
+  requires:
+    - pip
 
 about:
   home: {{ repo_url }}
