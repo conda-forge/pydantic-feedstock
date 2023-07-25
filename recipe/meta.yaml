@@ -1,5 +1,5 @@
 {% set name = "pydantic" %}
-{% set version = "2.0.3" %}
+{% set version = "2.1.0" %}
 {% set repo_url = "https://github.com/pydantic/pydantic" %}
 {% set docs_url = "https://docs.pydantic.dev" %}
 
@@ -9,12 +9,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 94f13e0dcf139a5125e88283fc999788d894e14ed90cf478bcc2ee50bd4fc630
+  sha256: 80a67e716158c813c9a6c0ce936ee24577e9fbd7453d159fc79850747a9aaa76
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -26,7 +26,7 @@ requirements:
     - python >=3.7
     - typing-extensions >=4.6.1
     - annotated-types >=0.4.0
-    - pydantic-core ==2.3.0
+    - pydantic-core ==2.4.0
 
 test:
   imports:
