@@ -32,6 +32,10 @@ requirements:
 test:
   requires:
     - pip
+    # Add a cython dependency for one particular version of python
+    # to ensure that tests pass even with cython installed
+    - cython      # [py==310]
+    - cython  3   # [py==311]
   imports:
     - {{ name }}
   commands:
