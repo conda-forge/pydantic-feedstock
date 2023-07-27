@@ -1,0 +1,15 @@
+diff --git a/pydantic/version.py b/pydantic/version.py
+index 16b76381..e392317f 100644
+--- a/pydantic/version.py
++++ b/pydantic/version.py
+@@ -12,6 +12,10 @@ else:  # pragma: no cover
+     except AttributeError:
+         compiled = False
+ 
++# We at conda-forge always compile the code with cython wether or not it is
++# installed at run time
++compiled: bool = True
++
+ 
+ def version_info() -> str:
+     import platform

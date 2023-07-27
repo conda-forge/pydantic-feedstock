@@ -10,6 +10,8 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 0fe8a415cea8f340e7a9af9c54fc71a649b43e8ca3cc732986116b3cb135d303
+  patches:
+    - patch_to_disable_cython_requirement_at_runtime.diff
 
 build:
   number: 0
@@ -32,6 +34,10 @@ requirements:
 test:
   requires:
     - pip
+    # Add a cython dependency for one particular version of python
+    # to ensure that tests pass even with cython installed
+    - cython      # [py==310]
+    - cython  3   # [py==311]
   imports:
     - {{ name }}
   commands:
