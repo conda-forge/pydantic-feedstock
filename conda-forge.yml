@@ -15,3 +15,5 @@ conda_build:
   pkg_format: '2'
 bot:
   inspection: update-grayskull
+  abi_migration_branches:
+    - '1.x'
