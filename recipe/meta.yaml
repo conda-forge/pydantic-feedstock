@@ -8,7 +8,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 0aca0f045ff6e2f097f1fe89521115335f15049eeb8a7bef3dafe4b19a74e289
 
 build:
@@ -18,13 +18,13 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - hatchling
     - hatch-fancy-pypi-readme >=22.5.0
     - pip
   run:
     - typing_extensions >=4.12.2
-    - python >=3.7
+    - python >={{ python_min }}
     - typing-extensions >=4.6.1
     - annotated-types >=0.6.0
     - pydantic-core ==2.27.0
@@ -36,6 +36,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: {{ repo_url }}
