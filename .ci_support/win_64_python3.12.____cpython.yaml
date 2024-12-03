@@ -1,3 +1,5 @@
+antic:
+- '0.2'
 c_compiler:
 - vs2019
 c_stdlib:
