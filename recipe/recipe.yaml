@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/prefix-dev/recipe-format/main/schema.json
+schema_version: 1
+
+context:
+  version: "2.11.5"
+
+package:
+  name: pydantic
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/p/pydantic/pydantic-${{ version }}.tar.gz
+  sha256: 7f853db3d0ce78ce8bbb148c401c2cdd6431b3473c0cdff2755c7690952a7b7a
+
+build:
+  number: 0
+  noarch: python
+  script:
+    - ${{ PYTHON }} -m pip install . -vv --no-deps --np-build-isolation --disable-pip-version-check
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - hatchling
+    - hatch-fancy-pypi-readme >=22.5.0
+    - pip
+  run:
+    - annotated-types >=0.6.0
+    - pydantic-core 2.33.2.*
+    - python >=${{ python_min }}
+    - typing_extensions >=4.12.2
+    - typing-inspection >=0.4.0
+
+tests:
+  - python:
+      imports: pydantic
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - 3.13.*
+
+about:
+  license: MIT
+  license_file: LICENSE
+  summary: Data validation and settings management using python type hinting
+  description: |
+    Data validation and settings management using python type hinting.
+    See documentation https://docs.pydantic.dev for more details.
+  homepage: https://github.com/pydantic/pydantic
+  repository: https://github.com/pydantic/pydantic
+  documentation: https://docs.pydantic.dev
+
+extra:
+  recipe-maintainers:
+    - samuelcolvin
+    - dgasmith
+    - davidbrochart
+    - pavelzw
