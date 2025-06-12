@@ -11,11 +11,10 @@ Summary: Data validation and settings management using python type hinting
 
 Development: https://github.com/pydantic/pydantic
 
-Documentation: https://docs.pydantic.dev
+Documentation: https://docs.pydantic.dev/
 
 Data validation and settings management using python type hinting.
-See documentation <https://docs.pydantic.dev> for more details.
-
+See documentation https://docs.pydantic.dev for more details.
 
 Current build status
 ====================
