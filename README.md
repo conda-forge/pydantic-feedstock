@@ -155,4 +155,5 @@ Feedstock Maintainers
 * [@dgasmith](https://github.com/dgasmith/)
 * [@pavelzw](https://github.com/pavelzw/)
 * [@samuelcolvin](https://github.com/samuelcolvin/)
+* [@thewchan](https://github.com/thewchan/)
 
