@@ -1,5 +1,5 @@
 {% set name = "pydantic" %}
-{% set version = "2.11.10" %}
+{% set version = "2.12.0" %}
 {% set repo_url = "https://github.com/pydantic/pydantic" %}
 {% set docs_url = "https://docs.pydantic.dev" %}
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: dc280f0982fbda6c38fada4e476dc0a4f3aeaf9c6ad4c28df68a666ec3c61423
+  sha256: c1a077e6270dbfb37bfd8b498b3981e2bb18f68103720e51fa6c306a5a9af563
 
 build:
   noarch: python
@@ -23,12 +23,12 @@ requirements:
     - hatch-fancy-pypi-readme >=22.5.0
     - pip
   run:
-    - typing-inspection >=0.4.0
-    - typing_extensions >=4.12.2
+    - typing-inspection >=0.4.2
+    - typing_extensions >=4.14.1
     - python >={{ python_min }}
     - typing-extensions >=4.6.1
     - annotated-types >=0.6.0
-    - pydantic-core ==2.33.2
+    - pydantic-core ==2.41.1
 
 test:
   imports:
