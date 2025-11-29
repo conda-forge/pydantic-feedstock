@@ -1,0 +1,60 @@
+schema_version: 1
+
+context:
+  name: pydantic
+  version: 2.12.5
+  repo_url: https://github.com/pydantic/pydantic
+  docs_url: https://docs.pydantic.dev
+
+package:
+  name: ${{ name }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  sha256: 4d351024c75c0f085a9febbb665ce8c0c6ec5d30e903bdb6394b7ede26aebb49
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - hatchling
+    - hatch-fancy-pypi-readme >=22.5.0
+    - pip
+  run:
+    - typing-inspection >=0.4.2
+    - typing_extensions >=4.14.1
+    - python >=${{ python_min }}
+    - typing-extensions >=4.6.1
+    - annotated-types >=0.6.0
+    - pydantic-core ==2.41.5
+
+tests:
+  - python:
+      imports:
+        - pydantic
+      pip_check: true
+      python_version: ${{ python_min }}.*
+
+about:
+  license: MIT
+  license_file: LICENSE
+  summary: Data validation and settings management using python type hinting
+  description: |
+    Data validation and settings management using python type hinting.
+    See documentation <${{ docs_url }}> for more details.
+  homepage: ${{ repo_url }}
+  repository: ${{ repo_url }}
+  documentation: ${{ docs_url }}
+
+extra:
+  recipe-maintainers:
+    - thewchan
+    - samuelcolvin
+    - dgasmith
+    - davidbrochart
+    - pavelzw
