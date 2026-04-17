@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pydantic
-  version: 2.13.1
+  version: 2.13.2
   repo_url: https://github.com/pydantic/pydantic
   docs_url: https://docs.pydantic.dev
 
@@ -12,7 +12,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: a0f829b279ddd1e39291133fe2539d2aa46cc6b150c1706a270ff0879e3774d2
+  sha256: b418196607e61081c3226dcd4f0672f2a194828abb9109e9cfb84026564df2d1
 
 build:
   number: 0
@@ -30,13 +30,15 @@ requirements:
     - typing_extensions >=4.14.1
     - python >=${{ python_min }}
     - annotated-types >=0.6.0
-    - pydantic-core ==2.46.1
+    - pydantic-core ==2.46.2
 tests:
   - python:
       imports:
         - pydantic
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   license: MIT
