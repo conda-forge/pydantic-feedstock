@@ -1,17 +1,14 @@
 schema_version: 1
 
 context:
-  name: pydantic
   version: 2.13.3
-  repo_url: https://github.com/pydantic/pydantic
-  docs_url: https://docs.pydantic.dev
 
 package:
-  name: ${{ name }}
+  name: pydantic
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  url: https://pypi.org/packages/source/p/pydantic/pydantic-${{ version }}.tar.gz
   sha256: af09e9d1d09f4e7fe37145c1f577e1d61ceb9a41924bf0094a36506285d0a84d
 
 build:
@@ -46,10 +43,9 @@ about:
   summary: Data validation and settings management using python type hinting
   description: |
     Data validation and settings management using python type hinting.
-    See documentation <${{ docs_url }}> for more details.
-  homepage: ${{ repo_url }}
-  repository: ${{ repo_url }}
-  documentation: ${{ docs_url }}
+  homepage: https://github.com/pydantic/pydantic
+  repository: https://github.com/pydantic/pydantic
+  documentation: https://docs.pydantic.dev
 
 extra:
   recipe-maintainers:
