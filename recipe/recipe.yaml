@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 2.13.5
+  version: 2.14.0
 
 package:
   name: pydantic
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pydantic/pydantic-${{ version }}.tar.gz
-  sha256: 51a9c5f7b2f8e636f04c6cada605d9b6a3bf1348fdf945a3d8869b19bba0ee08
+  sha256: 8a51a7aaddd60f55566d1f07bdd87b92b463903f39a8f26b71a06314cd1548ae
 
 build:
   number: 0
@@ -23,11 +23,11 @@ requirements:
     - hatch-fancy-pypi-readme >=22.5.0
     - pip
   run:
-    - typing-inspection >=0.4.2
-    - typing_extensions >=4.14.1
+    - typing-inspection >=0.4.4
+    - typing_extensions >=4.16.0
     - python >=${{ python_min }}
     - annotated-types >=0.6.0
-    - pydantic-core ==2.46.5
+    - pydantic-core ==2.50.0
 tests:
   - python:
       imports:
