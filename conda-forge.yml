@@ -17,4 +17,5 @@ bot:
   inspection: update-grayskull
   abi_migration_branches:
     - 1.x
+  automerge: true
 test: native_and_emulated
